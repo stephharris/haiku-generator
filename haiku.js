@@ -1,13 +1,11 @@
 var fs = require('fs');
 //console.log( fs.readFileSync('./cmudict.txt') );
 
-var text = readFile('./cmudict.txt');
-
-
 function readFile(file){
   return fs.readFileSync(file).toString();
 }
 
+var text = readFile('./cmudict.txt');
 
 // function syllables(str){ //returns null or a number of syllab
 //   var regex = /\d+/ig
@@ -86,6 +84,7 @@ var haikuPoem = [];
 }
 
 //createHaiku([5,7,5])
+//createHaiku([7,5,7])
 
 
 module.exports = {
@@ -93,4 +92,3 @@ module.exports = {
 };
 
 
-//console.log(module);
